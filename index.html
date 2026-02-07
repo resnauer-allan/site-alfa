@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Alfa Confecção — Camisetas Personalizadas com Qualidade e Prazo</title>
+  <meta name="description" content="Camisetas personalizadas para empresas, eventos, times e igrejas. Orçamento rápido, prazos cumpridos, tecidos e técnicas profissionais (Silk, DTF, Sublimação, Bordado)." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://www.seudominio.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alfa Confecção — Camisetas Personalizadas" />
+  <meta property="og:description" content="Orçamento rápido e produção profissional com prazos cumpridos. Tecidos e técnicas ideais para cada pedido." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.seudominio.com.br/" />
+  <meta property="og:image" content="https://www.seudominio.com.br/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alfa Confecção — Camisetas Personalizadas" />
+  <meta name="twitter:description" content="Orçamento rápido, qualidade e prazo de verdade." />
+  <meta name="twitter:image" content="https://www.seudominio.com.br/og-image.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+    ✅ APLIQUE NO SERVIDOR (recomendado):
+    Content-Security-Policy:
+      default-src 'self';
+      base-uri 'self';
+      object-src 'none';
+      frame-ancestors 'none';
+      img-src 'self' data: https:;
+      style-src 'self';
+      script-src 'self';
+      connect-src 'self';
+      upgrade-insecure-requests;
+
+    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+    X-Content-Type-Options: nosniff
+    Referrer-Policy: strict-origin-when-cross-origin
+    Permissions-Policy: geolocation=(), microphone=(), camera=()
+  -->
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a class="brand" href="#topo" aria-label="Alfa Confecção — Início">
+        <img class="logo-img"
+        src="/images/logo-alfa.png"
+        width="38"
+        height="38"
+        alt="Alfa Confecção" />
+        <span class="brand-text">
+          <strong>ALFA CONFECÇÃO</strong>
+          <span>Camisetas personalizadas</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav aria-label="Menu principal">
+        <ul id="menu" class="menu">
+          <li><a href="#produtos">Tecidos & Técnicas</a></li>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-ctas">
+        <a class="btn btn-ghost" href="#orcamento">Fazer orçamento</a>
+        <!-- Coloque seu número no formato internacional -->
+        <a class="btn btn-primary"
+           href="https://wa.me/5541999999999?text=Olá!%20Quero%20orçar%20camisetas%20personalizadas."
+           target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" role="main">
+    <!-- HERO -->
+    <section id="topo" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Produção profissional • Prazo cumprido • Suporte humano</p>
+          <h1 id="hero-title">Camisetas personalizadas sem dor de cabeça.</h1>
+          <p class="lead">
+            Atendemos <strong>empresas</strong>, <strong>eventos</strong>, <strong>times</strong> e <strong>igrejas</strong>.
+            Você configura o pedido em segundos e já sai com um pré-orçamento e o próximo passo.
+          </p>
+
+          <ul class="trust-row" aria-label="Diferenciais rápidos">
+            <li>Qualidade de produção</li>
+            <li>Entrega organizada</li>
+            <li>Aprovação da arte</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#orcamento">Gerar pré-orçamento</a>
+            <a class="btn btn-ghost" href="#portfolio">Ver portfólio</a>
+          </div>
+        </div>
+
+        <div class="hero-card" id="orcamento">
+          <h2 class="card-title">Configure seu pedido em segundos</h2>
+
+          <form id="quoteForm" class="form" novalidate>
+            <div class="field">
+              <label for="tipo">Tipo</label>
+              <select id="tipo" name="tipo" required>
+                <option value="empresa">Empresa</option>
+                <option value="evento">Evento</option>
+                <option value="time">Time</option>
+                <option value="igreja">Igreja</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="quantidade">Quantidade</label>
+              <input id="quantidade" name="quantidade" inputmode="numeric" autocomplete="off"
+                     placeholder="Ex.: 100" required minlength="1" maxlength="5" />
+              <p class="hint">Pedido Mínimo: 10 unidades</p>
+            </div>
+
+            <div class="field">
+              <label for="prazo">Prazo</label>
+              <select id="prazo" name="prazo" required>
+                <option value="urgente">Urgente (até 7 dias)</option>
+                <option value="normal" selected>Normal (8 a 15 dias)</option>
+                <option value="programado">Programado (16+ dias)</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">
+              Gerar pré-orçamento
+            </button>
+
+            <div id="quoteResult" class="result" aria-live="polite" hidden></div>
+
+            <p class="fineprint">
+              Ao solicitar o pré-orçamento, você recebe uma indicação de técnica e o próximo passo (briefing/arte).
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALOR / DIFERENCIAIS -->
+    <section class="value" aria-labelledby="value-title">
+      <div class="container">
+        <h2 id="value-title">Por que escolher a Alfa?</h2>
+        <p class="section-lead">
+          A gente simplifica do orçamento à entrega — com controle de qualidade e comunicação clara.
+        </p>
+
+        <div class="cards-3">
+          <article class="card">
+            <h3>Qualidade de produção</h3>
+            <p>Tecidos selecionados e acabamento profissional. Indicamos a técnica ideal para seu objetivo.</p>
+          </article>
+          <article class="card">
+            <h3>Prazo que se cumpre</h3>
+            <p>Processo organizado e acompanhamento. Você sabe em que etapa está: briefing → arte → produção → entrega.</p>
+          </article>
+          <article class="card">
+            <h3>Atendimento humano</h3>
+            <p>Você fala com pessoas. Ajudamos a evitar erros de arquivo, cores e tamanhos antes de imprimir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGMENTOS -->
+    <section id="segmentos" class="segments" aria-labelledby="segments-title">
+      <div class="container">
+        <h2 id="segments-title">Para quem é</h2>
+        <p class="section-lead">Modelos de atendimento e produção ajustados para cada contexto.</p>
+
+        <div class="bento">
+          <article class="bento-card">
+            <h3>Empresas</h3>
+            <p>Uniformes, ações internas, brindes e campanhas com identidade de marca.</p>
+            <a class="link" href="#portfolio">Ver exemplos →</a>
+          </article>
+
+          <article class="bento-card">
+            <h3>Eventos</h3>
+            <p>Camisetas para equipe, organização, staff e ações promocionais com prazo definido.</p>
+            <a class="link" href="#como-funciona">Como funciona →</a>
+          </article>
+
+          <article class="bento-card">
+            <h3>Times & Igrejas</h3>
+            <p>Padronização, personalização por nome/número e técnicas resistentes ao uso.</p>
+            <a class="link" href="#produtos">Tecidos & técnicas →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title">Como funciona</h2>
+        <p class="section-lead">Um fluxo claro para evitar retrabalho e garantir qualidade.</p>
+
+        <ol class="timeline">
+          <li class="step">
+            <h3>Briefing rápido</h3>
+            <p>Você informa tipo, quantidade, prazo e referências. Se não tiver arte, nós orientamos.</p>
+          </li>
+          <li class="step">
+            <h3>Arte e aprovação</h3>
+            <p>Checamos resolução, cores e posicionamento. Você aprova antes de produzir.</p>
+          </li>
+          <li class="step">
+            <h3>Produção</h3>
+            <p>Escolhemos a técnica ideal (Silk, DTF, Sublimação, Bordado) e iniciamos a confecção.</p>
+          </li>
+          <li class="step">
+            <h3>Entrega</h3>
+            <p>Retirada ou envio. O pedido segue com controle de qualidade e conferência final.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PRODUTOS & TECIDOS -->
+    <section id="produtos" class="products" aria-labelledby="products-title">
+      <div class="container">
+        <h2 id="products-title">Tecidos & técnicas</h2>
+        <p class="section-lead">A melhor combinação depende do uso, do visual e do orçamento.</p>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Tecidos</h3>
+            <ul class="spec">
+              <li><strong>Algodão</strong> — conforto, casual, excelente toque.</li>
+              <li><strong>Dry Fit</strong> — esporte, respirável, ideal para eventos e equipe.</li>
+              <li><strong>PV</strong> — durável, uniforme, ótimo custo-benefício.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Técnicas</h3>
+            <ul class="spec">
+              <li><strong>Silk</strong> — ótimo para grandes quantidades, alta durabilidade.</li>
+              <li><strong>DTF</strong> — cores vibrantes, detalhes finos, excelente versatilidade.</li>
+              <li><strong>Sublimação</strong> — ideal para tecidos específicos, acabamento leve.</li>
+              <li><strong>Bordado</strong> — premium, elegante e resistente.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="portfolio-head">
+          <div>
+            <h2 id="portfolio-title">Portfólio</h2>
+            <p class="section-lead">Uma curadoria de trabalhos (filtros para facilitar).</p>
+          </div>
+
+          <div class="filters" role="group" aria-label="Filtrar portfólio">
+            <button class="chip is-active" type="button" data-filter="all">Todos</button>
+            <button class="chip" type="button" data-filter="silk">Silk</button>
+            <button class="chip" type="button" data-filter="dtf">DTF</button>
+            <button class="chip" type="button" data-filter="bordado">Bordado</button>
+            <button class="chip" type="button" data-filter="sublimacao">Sublimação</button>
+          </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <!-- Itens (substitua por imagens reais / cases) -->
+          <article class="work" data-tags="silk">
+            <div class="work-media" aria-hidden="true"></div>
+            <h3>Uniforme corporativo</h3>
+            <p>Silk • PV • 120 unidades</p>
+          </article>
+          <article class="work" data-tags="dtf">
+            <div class="work-media" aria-hidden="true"></div>
+            <h3>Evento promocional</h3>
+            <p>DTF • Algodão • 80 unidades</p>
+          </article>
+          <article class="work" data-tags="bordado">
+            <div class="work-media" aria-hidden="true"></div>
+            <h3>Equipe premium</h3>
+            <p>Bordado • Algodão • 40 unidades</p>
+          </article>
+          <article class="work" data-tags="sublimacao">
+            <div class="work-media" aria-hidden="true"></div>
+            <h3>Time esportivo</h3>
+            <p>Sublimação • Dry Fit • 30 unidades</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Perguntas frequentes</h2>
+        <p class="section-lead">Respostas diretas para agilizar seu pedido.</p>
+
+        <div class="accordion" id="accordion">
+          <details class="qa">
+            <summary>Qual o prazo de entrega?</summary>
+            <p>O prazo depende da quantidade, técnica e da aprovação da arte. Em geral: urgente (até 7 dias), normal (8 a 15 dias) e programado (16+).</p>
+          </details>
+
+          <details class="qa">
+            <summary>Como envio a arte?</summary>
+            <p>Você pode enviar no WhatsApp. Recomendamos arquivos em PNG, PDF ou vetor (AI/SVG). A gente confere resolução e cores antes de produzir.</p>
+          </details>
+
+          <details class="qa">
+            <summary>Existe pedido mínimo?</summary>
+            <p>Para melhor custo-benefício, recomendamos a partir de 20 unidades. Mas avaliamos caso a caso conforme técnica e prazo.</p>
+          </details>
+
+          <details class="qa">
+            <summary>Quais técnicas vocês indicam para cada caso?</summary>
+            <p>Grandes quantidades: Silk. Detalhes e cores: DTF. Esportivos/tecidos específicos: Sublimação. Premium: Bordado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-box">
+        <div>
+          <h2 id="cta-title">Pronto para fazer seu pedido?</h2>
+          <p>Orce agora ou fale direto com a equipe. A gente te orienta do briefing à entrega.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#orcamento">Gerar pré-orçamento</a>
+          <a class="btn btn-ghost"
+             href="https://wa.me/5541999999999?text=Olá!%20Quero%20orçar%20camisetas%20personalizadas."
+             target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <strong>Alfa Confecção</strong>
+        <p class="muted">Camisetas personalizadas para empresas, eventos, times e igrejas.</p>
+      </div>
+
+      <div>
+        <p class="muted"><strong>Atendimento:</strong> Seg–Sex • 09h–18h</p>
+        <p class="muted"><strong>Cidade:</strong> Curitiba–PR (ajuste)</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#produtos">Tecidos & técnicas</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">© <span id="year"></span> Alfa Confecção. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Schema.org: LocalBusiness + Service + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Alfa Confecção",
+        "url": "https://www.seudominio.com.br/",
+        "description": "Confecção de camisetas personalizadas para empresas, eventos, times e igrejas.",
+        "areaServed": "BR",
+        "sameAs": [],
+        "telephone": "+55-41-99999-9999",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Camisetas personalizadas",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Alfa Confecção"
+        },
+        "serviceType": "Confecção e personalização de camisetas",
+        "areaServed": "Curitiba-PR e região",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual o prazo de entrega?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O prazo depende da quantidade, técnica e aprovação da arte. Em geral: urgente (até 7 dias), normal (8 a 15 dias) e programado (16+)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como envio a arte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você pode enviar no WhatsApp. Recomendamos PNG, PDF ou vetor (AI/SVG). Conferimos resolução e cores antes de produzir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Existe pedido mínimo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recomendamos a partir de 20 unidades para melhor custo-benefício, mas avaliamos caso a caso conforme técnica e prazo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais técnicas vocês indicam para cada caso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Grandes quantidades: Silk. Detalhes e cores: DTF. Esportivos/tecidos específicos: Sublimação. Premium: Bordado."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
